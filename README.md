@@ -69,7 +69,12 @@ Possible Issues:
   ```
   docker pull dwhitena/gophernotes:latest
   docker run --name gophernotes --net host -d dwhitena/gophernotes:latest
+  #to do in windows use 
+  docker run --net host -d dwhitena/gophernotes jupyter notebook --ip=0.0.0.0
+  or:
+  docker run -p 8888:8888 -d dwhitena/gophernotes jupyter notebook --ip=0.0.0.0
   ```
+  
 
 - Point your browser to `localhost:8888`.
 - Select `Golang` from the `New` drop down menu.
